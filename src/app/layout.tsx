@@ -14,9 +14,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">      
+        <body className={inter.className}>
+          <div className="relative min-h-screen dark:bg-zinc-900 lg:grid lg:grid-cols-app">
+            {children} 
+          </div>  
+        </body>
+      </html>
   )
 }
